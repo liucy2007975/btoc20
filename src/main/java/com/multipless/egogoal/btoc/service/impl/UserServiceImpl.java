@@ -5,6 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.multipless.egogoal.btoc.aop.Page;
+import com.multipless.egogoal.btoc.bean.UserBean;
 import com.multipless.egogoal.btoc.dao.UserEntityMapper;
 import com.multipless.egogoal.btoc.entity.UserEntity;
 import com.multipless.egogoal.btoc.service.UserService;
@@ -34,5 +36,13 @@ public class UserServiceImpl implements UserService {
 		int status = userEntityMapper.updateByPrimaryKeySelective(userEntity);
 		userEntity.setScore("111");//断点到这时，status为1，库中的channel还没有变化，说明整个方法是事务控制的
 		return userEntityMapper.updateByPrimaryKeySelective(userEntity);
+	}
+
+	@Override
+	public Page<UserBean> getAllUsersWithPage(Page page) {
+		List<UserEntity> allUsers = userEntityMapper.getAllUsers();
+		page.setResults(allUsers);
+//		page.setTotalRecord(allUsers.size());
+		return page;
 	}
 }

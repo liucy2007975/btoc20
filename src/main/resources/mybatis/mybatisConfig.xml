@@ -6,4 +6,14 @@
 	<settings>
 		<setting name="lazyLoadingEnabled" value="false" />
 	</settings>
+	<typeAliases>
+		<!--别名的设置-->
+		<typeAlias alias="page" type="com.multipless.egogoal.btoc.aop.Page"/> 
+	</typeAliases>
+	<!-- 拦截器及方言设置 -->
+ 	<plugins>
+	        <plugin interceptor="com.multipless.egogoal.btoc.aop.PageInterceptor">
+	     	     <property name="dialect" value="mysql"/>  
+	        </plugin>
+	</plugins>
 </configuration>
