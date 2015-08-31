@@ -18,6 +18,7 @@ import com.multipless.egogoal.btoc.bean.SelectUserKey;
 import com.multipless.egogoal.btoc.bean.UserBean;
 import com.multipless.egogoal.btoc.entity.UserEntity;
 import com.multipless.egogoal.btoc.service.UserService;
+import com.multipless.egogoal.btoc.utils.PropsLoader;
 import com.multipless.egogoal.btoc.utils.Result;
 
 /**
@@ -45,7 +46,9 @@ public class UserController {
 		list.add("222");
 		list.add("333");
 		list.add("444");
+		list.add(PropsLoader.getString("saohuobang.microweb.url"));
 		LOG.info("haha");
+		
 		return Result.success(list);
 		// {"resCode":1,"msg":"success","data":["111","222","333","444"]}
 	}

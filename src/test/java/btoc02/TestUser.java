@@ -24,7 +24,7 @@ public class TestUser {
 
 	@Autowired
 	private UserService userService;
-	@Test
+//	@Test
 	public void testlist(){
 		List<UserEntity> allUsers = userService.getAllUsers();
 		System.out.println(allUsers);
