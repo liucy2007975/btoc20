@@ -1,275 +1,286 @@
 package com.multipless.egogoal.btoc.entity;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class UserEntity {
-    private Long autoId;
+public class UserEntity implements Serializable {
 
-    private String userId;
+	private static final long serialVersionUID = 1L;
 
-    private String userName;
+	private Long autoId;
 
-    private String userMobile;
+	private String userId;
 
-    private String vipCardNo;
+	private String userName;
 
-    private String city;
+	private String userMobile;
 
-    private String detailAddress;
+	private String vipCardNo;
 
-    private String weixinOpenId;
+	private String city;
 
-    private String userLevel;
+	private String detailAddress;
 
-    private String userLevelName;
+	private String weixinOpenId;
 
-    private Long orgId;
+	private String userLevel;
 
-    private Long mallId;
+	private String userLevelName;
 
-    private String identityCardNo;
+	private Long orgId;
 
-    private String userEmail;
+	private Long mallId;
 
-    private String licensePlate;
+	private String identityCardNo;
 
-    private Integer integral;
+	private String userEmail;
 
-    private String weixinNick;
+	private String licensePlate;
 
-    private String deleteFlag;
+	private Integer integral;
 
-    private Date createTime;
+	private String weixinNick;
 
-    private Date updateTime;
+	private String deleteFlag;
 
-    private String periodCode;
+	private Date createTime;
 
-    private String sex;
+	private Date updateTime;
 
-    private String scoreType;
+	private String periodCode;
 
-    private String score;
+	private String sex;
 
-    private String codeImgurl;
+	private String scoreType;
 
-    private String channel;
+	private String score;
 
-    private String financeComId;
+	private String codeImgurl;
 
-    public Long getAutoId() {
-        return autoId;
-    }
+	private String channel;
 
-    public void setAutoId(Long autoId) {
-        this.autoId = autoId;
-    }
+	private String financeComId;
 
-    public String getUserId() {
-        return userId;
-    }
+	public Long getAutoId() {
+		return autoId;
+	}
 
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
+	public void setAutoId(Long autoId) {
+		this.autoId = autoId;
+	}
 
-    public String getUserName() {
-        return userName;
-    }
+	public String getUserId() {
+		return userId;
+	}
 
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
 
-    public String getUserMobile() {
-        return userMobile;
-    }
+	public String getUserName() {
+		return userName;
+	}
 
-    public void setUserMobile(String userMobile) {
-        this.userMobile = userMobile;
-    }
+	public void setUserName(String userName) {
+		this.userName = userName;
+	}
 
-    public String getVipCardNo() {
-        return vipCardNo;
-    }
+	public String getUserMobile() {
+		return userMobile;
+	}
 
-    public void setVipCardNo(String vipCardNo) {
-        this.vipCardNo = vipCardNo;
-    }
+	public void setUserMobile(String userMobile) {
+		this.userMobile = userMobile;
+	}
 
-    public String getCity() {
-        return city;
-    }
+	public String getVipCardNo() {
+		return vipCardNo;
+	}
 
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getDetailAddress() {
-        return detailAddress;
-    }
-
-    public void setDetailAddress(String detailAddress) {
-        this.detailAddress = detailAddress;
-    }
-
-    public String getWeixinOpenId() {
-        return weixinOpenId;
-    }
-
-    public void setWeixinOpenId(String weixinOpenId) {
-        this.weixinOpenId = weixinOpenId;
-    }
-
-    public String getUserLevel() {
-        return userLevel;
-    }
-
-    public void setUserLevel(String userLevel) {
-        this.userLevel = userLevel;
-    }
-
-    public String getUserLevelName() {
-        return userLevelName;
-    }
-
-    public void setUserLevelName(String userLevelName) {
-        this.userLevelName = userLevelName;
-    }
-
-    public Long getOrgId() {
-        return orgId;
-    }
-
-    public void setOrgId(Long orgId) {
-        this.orgId = orgId;
-    }
-
-    public Long getMallId() {
-        return mallId;
-    }
-
-    public void setMallId(Long mallId) {
-        this.mallId = mallId;
-    }
-
-    public String getIdentityCardNo() {
-        return identityCardNo;
-    }
-
-    public void setIdentityCardNo(String identityCardNo) {
-        this.identityCardNo = identityCardNo;
-    }
-
-    public String getUserEmail() {
-        return userEmail;
-    }
-
-    public void setUserEmail(String userEmail) {
-        this.userEmail = userEmail;
-    }
-
-    public String getLicensePlate() {
-        return licensePlate;
-    }
-
-    public void setLicensePlate(String licensePlate) {
-        this.licensePlate = licensePlate;
-    }
-
-    public Integer getIntegral() {
-        return integral;
-    }
-
-    public void setIntegral(Integer integral) {
-        this.integral = integral;
-    }
-
-    public String getWeixinNick() {
-        return weixinNick;
-    }
-
-    public void setWeixinNick(String weixinNick) {
-        this.weixinNick = weixinNick;
-    }
-
-    public String getDeleteFlag() {
-        return deleteFlag;
-    }
-
-    public void setDeleteFlag(String deleteFlag) {
-        this.deleteFlag = deleteFlag;
-    }
-
-    public Date getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
-    }
-
-    public Date getUpdateTime() {
-        return updateTime;
-    }
-
-    public void setUpdateTime(Date updateTime) {
-        this.updateTime = updateTime;
-    }
-
-    public String getPeriodCode() {
-        return periodCode;
-    }
-
-    public void setPeriodCode(String periodCode) {
-        this.periodCode = periodCode;
-    }
-
-    public String getSex() {
-        return sex;
-    }
-
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
-
-    public String getScoreType() {
-        return scoreType;
-    }
-
-    public void setScoreType(String scoreType) {
-        this.scoreType = scoreType;
-    }
-
-    public String getScore() {
-        return score;
-    }
-
-    public void setScore(String score) {
-        this.score = score;
-    }
-
-    public String getCodeImgurl() {
-        return codeImgurl;
-    }
-
-    public void setCodeImgurl(String codeImgurl) {
-        this.codeImgurl = codeImgurl;
-    }
-
-    public String getChannel() {
-        return channel;
-    }
-
-    public void setChannel(String channel) {
-        this.channel = channel;
-    }
-
-    public String getFinanceComId() {
-        return financeComId;
-    }
-
-    public void setFinanceComId(String financeComId) {
-        this.financeComId = financeComId;
-    }
+	public void setVipCardNo(String vipCardNo) {
+		this.vipCardNo = vipCardNo;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+	public String getDetailAddress() {
+		return detailAddress;
+	}
+
+	public void setDetailAddress(String detailAddress) {
+		this.detailAddress = detailAddress;
+	}
+
+	public String getWeixinOpenId() {
+		return weixinOpenId;
+	}
+
+	public void setWeixinOpenId(String weixinOpenId) {
+		this.weixinOpenId = weixinOpenId;
+	}
+
+	public String getUserLevel() {
+		return userLevel;
+	}
+
+	public void setUserLevel(String userLevel) {
+		this.userLevel = userLevel;
+	}
+
+	public String getUserLevelName() {
+		return userLevelName;
+	}
+
+	public void setUserLevelName(String userLevelName) {
+		this.userLevelName = userLevelName;
+	}
+
+	public Long getOrgId() {
+		return orgId;
+	}
+
+	public void setOrgId(Long orgId) {
+		this.orgId = orgId;
+	}
+
+	public Long getMallId() {
+		return mallId;
+	}
+
+	public void setMallId(Long mallId) {
+		this.mallId = mallId;
+	}
+
+	public String getIdentityCardNo() {
+		return identityCardNo;
+	}
+
+	public void setIdentityCardNo(String identityCardNo) {
+		this.identityCardNo = identityCardNo;
+	}
+
+	public String getUserEmail() {
+		return userEmail;
+	}
+
+	public void setUserEmail(String userEmail) {
+		this.userEmail = userEmail;
+	}
+
+	public String getLicensePlate() {
+		return licensePlate;
+	}
+
+	public void setLicensePlate(String licensePlate) {
+		this.licensePlate = licensePlate;
+	}
+
+	public Integer getIntegral() {
+		return integral;
+	}
+
+	public void setIntegral(Integer integral) {
+		this.integral = integral;
+	}
+
+	public String getWeixinNick() {
+		return weixinNick;
+	}
+
+	public void setWeixinNick(String weixinNick) {
+		this.weixinNick = weixinNick;
+	}
+
+	public String getDeleteFlag() {
+		return deleteFlag;
+	}
+
+	public void setDeleteFlag(String deleteFlag) {
+		this.deleteFlag = deleteFlag;
+	}
+
+	public Date getCreateTime() {
+		return createTime;
+	}
+
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
+	}
+
+	public Date getUpdateTime() {
+		return updateTime;
+	}
+
+	public void setUpdateTime(Date updateTime) {
+		this.updateTime = updateTime;
+	}
+
+	public String getPeriodCode() {
+		return periodCode;
+	}
+
+	public void setPeriodCode(String periodCode) {
+		this.periodCode = periodCode;
+	}
+
+	public String getSex() {
+		return sex;
+	}
+
+	public void setSex(String sex) {
+		this.sex = sex;
+	}
+
+	public String getScoreType() {
+		return scoreType;
+	}
+
+	public void setScoreType(String scoreType) {
+		this.scoreType = scoreType;
+	}
+
+	public String getScore() {
+		return score;
+	}
+
+	public void setScore(String score) {
+		this.score = score;
+	}
+
+	public String getCodeImgurl() {
+		return codeImgurl;
+	}
+
+	public void setCodeImgurl(String codeImgurl) {
+		this.codeImgurl = codeImgurl;
+	}
+
+	public String getChannel() {
+		return channel;
+	}
+
+	public void setChannel(String channel) {
+		this.channel = channel;
+	}
+
+	public String getFinanceComId() {
+		return financeComId;
+	}
+
+	public void setFinanceComId(String financeComId) {
+		this.financeComId = financeComId;
+	}
+
+	@Override
+	public String toString() {
+		return "UserEntity [autoId=" + autoId + ", userId=" + userId + ", userName=" + userName + ", userMobile=" + userMobile + ", vipCardNo=" + vipCardNo + ", city=" + city + ", detailAddress=" + detailAddress + ", weixinOpenId=" + weixinOpenId + ", userLevel=" + userLevel + ", userLevelName=" + userLevelName + ", orgId=" + orgId + ", mallId=" + mallId + ", identityCardNo=" + identityCardNo + ", userEmail=" + userEmail + ", licensePlate=" + licensePlate + ", integral=" + integral + ", weixinNick=" + weixinNick + ", deleteFlag=" + deleteFlag + ", createTime=" + createTime + ", updateTime=" + updateTime + ", periodCode=" + periodCode + ", sex=" + sex + ", scoreType=" + scoreType + ", score=" + score + ", codeImgurl=" + codeImgurl + ", channel=" + channel + ", financeComId=" + financeComId
+				+ "]";
+	}
+
 }
